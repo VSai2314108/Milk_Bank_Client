@@ -4,7 +4,7 @@ import React,{useEffect, useRef, useState} from 'react';
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import axios from 'axios';
 export default function NewForm(props){
-    axios.defaults.baseURL = 'http://milkbankserver-env.eba-p6zpmbku.ap-northeast-1.elasticbeanstalk.com';//ngrok url here
+    axios.defaults.baseURL = 'https://d2lnct6w00pyms.cloudfront.net';//ngrok url here
 
     const [formData, setFormData] = useState( {
         formId: props.formId,
